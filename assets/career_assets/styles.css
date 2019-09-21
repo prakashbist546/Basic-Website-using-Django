@@ -1,0 +1,116 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.row {
+  max-width: 100%;
+
+}
+
+.card {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  float: left;
+  padding: 0 1.7rem;
+  width: 370px;
+
+}
+
+
+
+.card .wrapper {
+  background-color: #5dff3a;
+  min-height: 540px;
+
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.card .wrapper:hover .data {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card .data .content {
+  padding: 1em;
+
+  z-index: 1;
+}
+.card .vacancy_title {
+    font-size-adjust: 20;
+  margin-top: 10px;
+}
+
+
+
+.example-1 .wrapper {
+  background: #1b6d85
+}
+.example-1 .date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #77d7b9;
+  color: #fff;
+  padding: 0.8em;
+}
+.example-1 .date span {
+  display: block;
+  text-align: center;
+}
+.example-1 .date .day {
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+}
+.example-1 .date .month {
+ font-weight: 700;
+  font-size: 24px;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+}
+.example-1 .date .month,
+.example-1 .date .year {
+  font-size: 12px;
+}
+.example-1 .content {
+  background-color: #fff;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+.example-1 .title a {
+  color: gray;
+}
+
+
+.example-1 .author {
+
+	color: #1b6d85;
+	display: block;
+	font-size: 1.6em;
+	font-weight: 500;
+	margin-top: 60px;
+
+}
+

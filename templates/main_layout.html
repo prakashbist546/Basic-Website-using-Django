@@ -1,0 +1,107 @@
+{% block content_main %}
+{% load static from staticfiles %}
+ <!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bit4stack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'icons/logo_main_small.png' %}">
+    <link rel='stylesheet' href='{% static 'bootstrap-3.3.7/css/bootstrap.min.css' %}'>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+
+<body>
+
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#1885ed">
+  <title>Homepage</title>
+</head>
+
+
+<div class="header__menu">
+    <nav id="navbar" class="navbar-fixed-top">
+      <ul class="header__elenco">
+         <li class="header__el header__el--blue"><a href="/home" class="btn btn--width"><strong>Home →</strong></a></li>
+         <li class="header__el header__el--blue"><a href="/career" class="btn btn--width"><strong>Career →</strong></a></li>
+         <li class="header__el header__el--blue"><a href="/contact" class="btn btn--width"><strong>Contact →</strong></a></li>
+         <li class="header__el header__el--blue"><a href="/about" class="btn btn--width"><strong>About →</strong></a></li>
+      </ul>
+    </nav>
+  </div>
+    </div>
+
+<div class="sect sect--padding-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+    <div class="site">
+
+
+      </div>
+
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="content related-widget-wrapper">
+{% block content %}
+
+{% endblock %}
+
+</div>
+
+   <div class="sect sect--violet ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="career_title">Oh! Your have digged our website in search for any services or query?</h1>
+        <h1 class="career_sub">We will pleased to have you.</h1>
+        <a href="/contact" class="btn btn--width">Contact</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-xs-6">
+
+       <img class="footer__img" src="{% static 'icons/logo_main_small.png' %}">
+          <h1 class="footer__title">Bit4stack<span class="footer__light">.com</span></h1></div>
+        <div class="footer__social">
+              <h2 class="career_title">Navigation</h2>
+          <ul>
+                        <li><a href="/home" class="career_sub">Home</a></li>
+                        <li><a href="/career" class="career_sub">Career</a></li>
+                        <li><a href="/contact" class="career_sub">Contact</a></li>
+                        <li><a href="/about" class="career_sub">About</a></li>
+                    </ul>
+        </div>
+      <div class="col-md-10 col-xs-6">
+          <div class="footer__social">
+
+          <a href="#" class="footer__social-l">
+            <img src=" {% static 'icons/linkedin.png' %}">       </a>
+          <a href="#" class="footer__social-l">
+            <img src=" {% static 'icons/facebook.png' %}">         </a>
+        </div>
+      </div>
+
+<div class="footer_description">Copyright@Bit4stack Inc. || All right reserved</div>
+    </div>
+
+  </div>
+</footer>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+</body>
+</html>
+
+{% endblock %}

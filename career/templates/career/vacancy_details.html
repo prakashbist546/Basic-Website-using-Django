@@ -1,0 +1,16 @@
+{% extends 'main_layout.html' %}
+
+{% block content %}
+
+{% load static from staticfiles %}
+
+    <h1>hello</h1>
+
+    <h1>{{ vacancy.title }}</h1>
+    <h1>{{ vacancy.type }}</h1>
+    <h1>{{ vacancy.summary }}</h1>
+    <h1>{{ vacancy.resposibilities }}</h1>
+    <h1>{{ vacancy.requirements }}</h1>
+
+
+{% endblock %}

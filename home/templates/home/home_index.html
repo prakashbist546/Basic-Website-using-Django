@@ -1,0 +1,233 @@
+{% extends 'main_layout.html' %}
+
+
+{% block content %}
+{% load static from staticfiles %}
+
+
+<div class="slideshow">
+    <main class="main-content">
+  <section class="slideshow">
+    <div class="slideshow-inner">
+      <div class="slides">
+        <div class="slide is-active ">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">Online Learning</div>
+              <div class="text">
+                <p>Online course videos</p>
+              </div>
+              <a href="#" class="slideshow_btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="http://www.hrea.org/wp-content/uploads/2014/11/placeholder-blog-image.jpg" alt="" class="image" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">Internet of Things, AI</div>
+              <div class="text">
+                <p>Connected Devices,Reinforcement Learning, NLP & Predictive API</p>
+              </div>
+              <a href="#" class="slideshow_btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src=" https://wallpapercave.com/wp/wp2042044.jpg" alt="" class="image" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">Web Development</div>
+              <div class="text">
+                <p>MEAN Stack, PHP, Java, Python + Django + flask</p>
+              </div>
+              <a href="#" class="slideshow_btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src=" http://hdqwalls.com/wallpapers/web-development-minimalism-bl.jpg" alt="" class="image" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">App Development</div>
+              <div class="text">
+                <p>Java + Kotlin + Swift </p>
+              </div>
+              <a href="#" class="slideshow_btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src=" https://i.pinimg.com/originals/1e/10/a3/1e10a321dd472b15f2abfb99e1b18951.jpg" alt="" class="image" />
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="item is-active">
+          <span class="icon">1</span>
+        </div>
+        <div class="item">
+          <span class="icon">2</span>
+        </div>
+        <div class="item">
+          <span class="icon">3</span>
+        </div>
+        <div class="item">
+          <span class="icon">4</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script  src="{% static 'home_assets/slideshow/js/index.js' %}"></script>
+</div>
+<div class="sect sect--padding-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+    <div class="site">
+        <br>
+
+      <h1 class="site__title">Welcome!!!</h1>
+               <br>
+         <a class="contacts__link" style="margin-left: 50px"><img src="{% static 'icons/logo_main_small.png' %}">
+              <h1 class="contacts_title-ag">Bit4stack<span class="contacts--light">.com</span></h1></a>
+        <h2 class="site__subtitle">We Provide What you need</h2>
+      <div class="site__box-link">
+
+        <a class="btn btn--revert btn--width" href="/contact">Contact</a>
+      </div>
+      <img class="site__img" src="https://image.ibb.co/c7grYb/image3015.png">
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+ <div class="sect sect--padding-bottom">
+<div class="container">
+<div class="row row--center">
+  <h1 class="row__title">
+    Our Services
+  </h1>
+  <h2 class="row__sub">"Get the best support from us"</h2>
+</div>
+<div class="row row--center row--margin">
+  <div class="col-md-4 col-sm-4 price-box price-box--purple">
+    <div class="price-box__wrap">
+      <div class="price-box__img"></div>
+      <h1 class="price-box__title">
+        Online Courses
+      </h1>
+      <p class="price-box__people">
+
+      </p>
+
+      </h3>
+      <p class="price-box__feat">
+        Course Lists
+      </p>
+      <ul class="price-box__list">
+        <li class="price-box__list-el">GMAT</li>
+        <li class="price-box__list-el">GRE,TOEFL</li>
+        <li class="price-box__list-el">EPS Exam</li>
+        <li class="price-box__list-el">Python,Java</li>
+        <li class="price-box__list-el">Game Development</li>
+        <li class="price-box__list-el">Android </li>
+        <li class="price-box__list-el">PHP, .Net</li>
+      </ul>
+       <div class="price-box__btn">
+      <a class="btn btn--purple btn--width"></a>
+    </div>
+  </div>
+  </div>
+  <!-- second -->
+  <div class="col-md-4 col-sm-4 price-box price-box--violet">
+  <div class="price-box__wrap">
+      <div class="price-box__img"></div>
+      <h1 class="price-box__title">
+        IoT,Machine Learning,AI
+      </h1>
+      <p class="price-box__people">
+        Various Company Projects
+      </p>
+
+      <p class="price-box__feat">
+        Project Lists
+      </p>
+      <ul class="price-box__list">
+        <li class="price-box__list-el">Vehicle Monitoring System</li>
+        <li class="price-box__list-el">Auto responder of Emails</li>
+        <li class="price-box__list-el">Advanced Password Generator</li>
+        <li class="price-box__list-el">Automation of Tic-Tac-Toe</li>
+        <li class="price-box__list-el">Data Analyzer </li>
+      </ul>
+      <div class="price-box__btn">
+      <a class="btn btn--violet btn--width"></a>
+    </div>
+  </div>
+  </div>
+
+<!-- third -->
+  <div class="col-md-4 col-sm-4 price-box price-box--blue">
+  <div class="price-box__wrap">
+      <div class="price-box__img"></div>
+      <h1 class="price-box__title">
+        Apps & Web Development
+      </h1>
+      <p class="price-box__people">
+        Worked over many projects
+      </p>
+
+      <p class="price-box__feat">
+        Service Lists
+      </p>
+      <ul class="price-box__list">
+        <li class="price-box__list-el">Android App</li>
+        <li class="price-box__list-el">Web Hosting & Support</li>
+        <li class="price-box__list-el">Web Development & Security:PHP,Java Script</li>
+        <li class="price-box__list-el">Web Apps:Django,Java</li>
+
+      </ul>
+    <div class="price-box__btn">
+      <a class="btn btn--blue btn--width"></a>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+ </div>
+
+
+
+
+
+<div class="site">
+<h1 class="site__title">How we handle projects?</h1>
+      <img class="site__imgs" src="{% static 'home_assets/planning.png' %}">
+
+</div>
+    <div class="map-view">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1766.4221894734878!2d85.33357323173604!3d27.691204316154856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x61931102f3dec369!2sCambridge+Boys+Hotel!5e0!3m2!1sen!2snp!4v1544275200826"
+           width="600" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+
+
+{% endblock %}

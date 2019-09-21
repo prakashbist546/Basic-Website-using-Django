@@ -1,0 +1,88 @@
+ {% extends 'main_layout.html' %}
+ {% block content %}
+
+ {% load static from staticfiles %}
+
+     <div class="site">
+     <img class="site__imgs" src="{% static 'career_assets/career-banne.jpg' %}">
+         <br>
+         <br>
+         <h1 class="site__subtitle">Working with us is a great opportunity to enhance the skills and improve quality.
+             <br>
+         With great team support and resources one can feel great joy at work.
+
+              Bit4stack offers a wide range of work opportunities for fresh graduates where you start with real and meaningful projects from day one. We are an innovative company where we value raw ideas and thinking. You will get to work with experienced colleagues who will help you learn and enhance your skills.
+
+We are looking for individuals who are motivated to learn and develop. This is the right place to start if you are looking for interesting and challenging assignments, and if you want to bring new ideas to our business. Some examples of entry-level roles include: Engineer, Designer, Developer,Marketing Assistant and many more.
+         </h1>
+     </div>
+<div class="sect sect--white">
+<div class="container">
+  <div class="row">
+   <h1 class="row__title">
+    What we expect from Bit4stack?
+  </h1>
+  <h2 class="row__sub"></h2>
+  </div>
+
+  <div class="row row--margin">
+    <div class="col-md-6 article-pre__col">
+
+        <a class="contacts__link"><img src="{% static 'career_assets/teamwork.png' %}"></a>
+        <h1 class="row__title">Team Work</h1>
+    </div>
+      <div class="col-md-6 article-pre__col">
+          <a class="contacts__link"><img src="{% static 'career_assets/learn.png' %}"></a>
+          <h1 class="row__title">Always be learning</h1></a>
+    </div>
+ </div>
+  <div class="row">
+     <div class="col-md-6 article-pre__col">
+         <a class="contacts__link"><img src="{% static 'career_assets/explore.png' %}"></a>
+         <h1 class="row__title">Opportunity to explore</h1>
+    </div>
+      <div class="col-md-6 article-pre__col">
+          <a class="contacts__link"><img src="{% static 'career_assets/Opportunity.png' %}"></a>
+          <h1 class="row__title">Endless opportunities</h1>
+    </div>
+  </div>
+</div>
+</div>
+
+ <h1 class="row__title" style="background-color: #815ba7">
+     Vacancy Lists</h1>
+<link rel='stylesheet' href='{% static 'career_assets/styles.css' %}'>
+ <div class="row">
+
+ {% for vacancy in vacancies %}
+  <div class="example-1 card">
+
+    <div class="wrapper">
+      <div class="date">
+        <span class="day">{{ vacancy.date.day }}</span>
+        <span class="month">{{ vacancy.monthname }}</span>
+        <span class="year">{{ vacancy.date.year }}</span>
+      </div>
+      <div class="data">
+        <div class="content">
+            <span class="author">Type: {{ vacancy.type }}</span>
+            <h1 class="vacancy_title">{{ vacancy.title }}</h1>
+            <a class="btn btn--revert btn--width" style="margin-left: 80px" href="{% url 'career:details' slug=vacancy.slug %}">Details</a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+{% endfor %}
+</div>
+
+
+<br>
+     <br>
+     <br>
+
+
+
+ {% endblock %}
